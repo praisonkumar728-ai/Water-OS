@@ -1,0 +1,65 @@
+EWICRS - CINEMATIC FILM: NARRATION SCRIPT
+(timecodes are global; cue = first spoken word)
+
+=== S1  The Water Intelligence Problem   [0:00.0 - 0:45.0]
+  [0:06.60]  Water sustains every community. Yet one in four people, 2.1 billion, still lack safely managed drinking water.
+  [0:15.40]  Reservoirs rise and fall with rain. Drought and storms push infrastructure past its limits.
+  [0:22.00]  And pollution can enter a network, and travel through it before anyone notices.
+  [0:28.20]  Monitoring and prediction are not enough. When reality drifts away from the model, who notices? That is the intelligence gap.
+  [0:38.00]  This is EWICRS
+
+=== S2  Four-Layer Intelligence   [0:45.0 - 1:15.0]
+  [0:45.30]  Four layers of intelligence.
+  [0:48.60]  Epistemic intelligence tracks what the system knows, and how reliable that knowledge is.
+  [0:55.20]  Scientific intelligence tests models against physical laws.
+  [1:00.00]  Predictive intelligence forecasts storage, demand, climate and pollution risk.
+  [1:05.00]  Adaptive intelligence simulates alternatives, and recommends approved actions.
+  [1:10.40]  Feedback then closes the loop.
+
+=== S3  Physical Digital Twin   [1:15.0 - 1:55.0]
+  [1:15.60]  The digital twin is a time-stepped simulation of a school water system: catchment, tanks, pipes, demand and sensors.
+  [1:24.40]  Storage changes with inflow and rainfall, minus demand and leakage.
+  [1:29.60]  It also models pollutant entry, water-quality sensors, and treatment and isolation points.
+  [1:37.00]  All of this data is synthetic.
+  [1:40.00]  Here is the dashboard from this run.
+  [1:43.40]  Tank storage.
+  [1:45.30]  Rainfall.
+  [1:47.20]  Temperature.
+  [1:49.10]  Water quality.
+  [1:50.90]  Actual versus predicted.
+  [1:53.10]  Risk score.
+
+=== S4  Experiment 1 - Model Failure and Revision   [1:55.0 - 2:35.0]
+  [1:55.50]  Experiment one: does justified model revision improve later prediction?
+  [2:00.60]  In the simulated physical system, an extra water loss is hidden from the inference model.
+  [2:07.20]  The residual is observed minus predicted.
+  [2:10.60]  Here it departs from zero near step 43, peaks near the leakage marker, then reverses sign.
+  [2:17.50]  But a residual alone does not prove the model wrong. The system proposes competing explanations: demand increase, sensor error, unexpected loss, or inflow error.
+  [2:28.40]  A revision is kept only if evidence justifies it, and held-out data agree.
+
+=== S5  Experiment 2 - Pollution Detection   [2:35.0 - 3:15.0]
+  [2:35.50]  Experiment two: a simulated pollutant enters the network.
+  [2:40.20]  The plume travels through the pipes with transport delay, reaching upstream and downstream sensors at different times.
+  [2:47.90]  Five explanations compete: upstream contamination, local contamination, runoff, sensor failure, or unresolved cause.
+  [2:56.40]  Each predicts a different pattern across sensors. The system weighs the evidence, and can conclude that evidence is insufficient to distinguish hypotheses.
+  [3:06.90]  A simulated intervention then isolates the affected zone, and quality is verified afterwards.
+
+=== S6  Experiment 3 - Climate Resilience   [3:15.0 - 3:55.0]
+  [3:15.60]  Experiment three tests climate resilience, starting with normal rainfall.
+  [3:21.20]  Then, prolonged drought.
+  [3:26.20]  Extreme rainfall.
+  [3:31.20]  Increased demand.
+  [3:36.20]  And drought combined with increased demand.
+  [3:41.40]  Three strategies face identical conditions: fixed rules, forecasting, and epistemic adaptation.
+  [3:49.00]  Compared on reliability, unmet demand, shortage duration and recovery.
+
+=== S7  Physical Implementation Pathway   [3:55.0 - 4:35.0]
+  [3:55.60]  The physical pathway is a safe, isolated tabletop prototype, not connected to any school water system.
+  [4:03.00]  An ESP32 reads level, turbidity, pH and temperature sensors, and drives a low-voltage pump between two containers.
+  [4:14.00]  Readings are calibrated against reference standards, then flow to a Python backend, the digital twin, and the intelligence engine.
+  [4:22.80]  Only approved commands return to the pump, with manual override and an emergency stop.
+  [4:29.60]  This hardware pathway is planned, not yet validated.
+
+=== S8  Conclusion   [4:35.0 - 4:49.9]
+  [4:35.80]  The future of intelligent water management is not just predicting what will happen.
+  [4:41.50]  It is understanding how reliable our knowledge is, testing it against reality, and adapting when reality proves us wrong.
